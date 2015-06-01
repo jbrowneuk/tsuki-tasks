@@ -1,0 +1,78 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!-- TODO: these should be GeometryDrawings, etc for image sources. ContentControls are hacky here -->
+    <ContentControl x:Key="MoreIcon"
+                    x:Shared="False">
+        <Viewbox>
+            <Canvas Width="16"
+                    Height="16">
+                <Ellipse Fill="#EEEEEC"
+                         Stroke="#555753"
+                         StrokeThickness="1"
+                         Stretch="Fill"
+                         Width="16"
+                         Height="16" />
+                <Path Fill="#555753"
+                      Data="M 0,0 2,0 5,3 8,0 10,0 10,2 5,7 0,2 z"
+                      Canvas.Left="3"
+                      Canvas.Top="5" />
+            </Canvas>
+        </Viewbox>
+    </ContentControl>
+    <ContentControl x:Key="LessIcon"
+                    x:Shared="False">
+        <Viewbox>
+            <Canvas Width="16"
+                    Height="16">
+                <Ellipse Fill="#EEEEEC"
+                         Stroke="#2E3436"
+                         StrokeThickness="1"
+                         Width="16"
+                         Height="16" />
+                <Path Fill="#555753"
+                      Data="M 0,10 0,8 5,3 10,8 10,10 8,10 5,7 2,10 z"
+                      Canvas.Left="3"
+                      Canvas.Bottom="5" />
+            </Canvas>
+        </Viewbox>
+    </ContentControl>
+    <ContentControl x:Key="AddIcon"
+                    x:Shared="False">
+        <Viewbox>
+            <Path Stroke="White"
+                  StrokeThickness="1"
+                  Fill="Green"
+                  MinWidth="12"
+                  MinHeight="12"
+                  Data="M0,6 6,6 6,0 10,0 10,6 16,6 16,10 10,10 10,16 6,16 6,10 0,10" />
+        </Viewbox>
+    </ContentControl>
+    <!-- TODO: better icons here -->
+    <ContentControl x:Key="InfoIcon"
+                    x:Shared="False">
+        <Viewbox>
+            <Grid Width="16"
+                  Height="16">
+                <Ellipse Fill="#EEEEEC"
+                         Stroke="#2E3436"
+                         StrokeThickness="1" />
+                <TextBlock Foreground="#555753"
+                           TextAlignment="Center">i</TextBlock>
+            </Grid>
+        </Viewbox>
+    </ContentControl>
+    <ContentControl x:Key="CrossIcon"
+                    x:Shared="False">
+        <Viewbox>
+            <Grid Width="16"
+                  Height="16">
+                <Ellipse Fill="#EEEEEC"
+                         Stroke="#2E3436"
+                         StrokeThickness="1" />
+                <TextBlock Foreground="#555753"
+                           TextAlignment="Center">i</TextBlock>
+            </Grid>
+        </Viewbox>
+    </ContentControl>
+</ResourceDictionary>
